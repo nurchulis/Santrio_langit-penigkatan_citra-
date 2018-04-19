@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8 />
+<title>Test</title>
+</head>
+<body>
+<canvas id="can" width="100" height="500"></canvas>
+<script type="text/javascript">
+
+var ctx = document.getElementById('canvas').getContext('2d');
+var play = setInterval('Rotate()',16);
+var i = 0;
+var shipImg = new Image();
+
+  var canvas = document.getElementById("can");
+function Rotate() {
+  ctx.fillStyle = '#000';
+  ctx.fillRect(0,0,100,100);
+
+  ctx.save();
+  ctx.translate(50, 50);
+  ctx.rotate(i / 180 / Math.PI);
+  ctx.drawImage(canvas, -16, -16);
+  ctx.restore();
+  i += 10;
+};
+
+</script>
+</body>
+</html>

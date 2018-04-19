@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Satrio Langit Alpha</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!-- jQuery library -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+  <script src="js/SimpleImage.js" >
+</script>
+</head>
+
+<body>
+
+  <div id="particles-js"></div>
+
+<div class="text" style="width: 1000px; height: 530px;">
+ 
+
+<h1>Peningkatan citra Observasi image benda Angkasa</h1>
+<center>
+<div class="row">
+<canvas id="can" style=" padding: 5px; width: 450px; height: 250px; background-color: #ecf0f1; margin-right: 10px;">
+</canvas>
+<canvas id="canr" style=" padding: 5px; width: 450px; height: 250px; background-color: #ecf0f1;">
+</canvas>
+</div>
+</center>
+
+
+
+<div class="col-md-12" style="margin-top: 20px; padding:0px;">
+<p>
+  <input type="file" multiple="false" style="background: #3498db" accept="image/*" id="finput" onchange="upload()" >
+
+  <input type="button" value="Reset" class="btn btn-danger" onclick="reset()" style="margin-left: 110px;">
+  <input type="button" value="Make Negative" class="btn" onclick="Negative()" >
+  <input type="button" value="Make Grayscale" class="btn" style="background:#95a5a6; color:white" onclick="makeGray()" >
+  <input type="button" value="Make Biner" class="btn" style="background: #2c3e50; color:white" onclick="biner()" >
+</p>
+<p>
+ <label for="male"><b>Tingkatkan</b></label>
+  <input type="button" class="btn btn-primary" value="Tingkat Level 1" onclick="level1()">
+  <input type="button" value="Tingkat Level 2" class="btn btn-primary" onclick="level2()">
+  <input type="button" value="Tingkat Level 3" class="btn btn-primary" onclick="level3()">
+  <font style="color:white"></font>
+  <br/><br/>
+ <label for="male" style="margin-right: 25px;"><b>Kurangi</b></label>
+  <input type="button" value="Tingkat Level -1" class="btn btn-warning" onclick="level_1()">
+  <input type="button" value="Tingkat Level -2" class="btn btn-warning" onclick="level_2()">
+  <input type="button" value="Tingkat Level -3" class="btn btn-warning" onclick="level_3()">
+</p>
+</div>
+  
+  
+
+</div>
+  <script src='https://cldup.com/S6Ptkwu_qA.js'></script>
+
+
+    <script  src="js/convert.js"></script>  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
